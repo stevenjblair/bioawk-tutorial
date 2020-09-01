@@ -57,17 +57,17 @@ FASTA/FASTQ name and sequence).
 You can count sequences very effectively with bioawk, because awk
 updates the built-in variable `NR` (number of records):
 
-    bioawk -cfastx 'END{print NR}' test.fastq
+    ./bioawk -cfastx 'END{print NR}' test.fastq
 
 But this is just the beginning; what if you wanted to use it to make a
 tab-delimited table of names and sequence lengths, you could do:
 
-    bioawk -cfastx '{print $name, length($seq)}' test-trimmed.fastq
+    ./bioawk -cfastx '{print $name, length($seq)}' test-trimmed.fastq
 
 Or maybe you want to see how many sequences are shorter (less than
 80bp) now?
 
-    bioawk -cfastx 'BEGIN{ shorter = 0} {if (length($seq) < 80) shorter += 1} END {print "shorter sequences", shorter}' test-trimmed.fastq
+    ./bioawk -cfastx 'BEGIN{ shorter = 0} {if (length($seq) < 80) shorter += 1} END {print "shorter sequences", shorter}' test-trimmed.fastq
 	
 bioawk can also take other input formats: 
 
