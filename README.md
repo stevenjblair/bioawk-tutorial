@@ -4,7 +4,7 @@ There was some interest in bioawk, a useful awk fork for handling
 bioinformatics formats at the UC Davis Software Carpentry course, so
 here is a quick tutorial.
 
-links to the samples used in the tutorial are 
+links to the samples used in the tutorial are:  
 https://raw.githubusercontent.com/stevenjblair/bioawk-tutorial/master/animals.txt  
 https://raw.githubusercontent.com/stevenjblair/bioawk-tutorial/master/test.fastq  
 https://raw.githubusercontent.com/stevenjblair/bioawk-tutorial/master/test-trimmed.fastq  
